@@ -1,8 +1,8 @@
 {
   "images" : [
     {
-      "idiom" : "tv",
-      "filename" : "tvOSDigitalSignageLogoLarge.png",
+      "idiom" : "universal",
+      "filename" : "tvOSDigitalSignageTransparentSquareLogo.png",
       "scale" : "1x"
     }
   ],

@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import tvOSFirstTest
+@testable import tvOSDigitalSignage
 
-class tvOSFirstTestTests: XCTestCase {
+class tvOSDigitalSignageTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
