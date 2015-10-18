@@ -85,7 +85,7 @@ class ViewController: UIViewController {
             let properties = jsonResult["properties"] as! [String:AnyObject]
             let firstName = properties["firstName"] as! String
             let city = properties["city"] as! String
-            lowerThirdTextView.text = "Hello \(firstName), did you know you could get all your drinks delivered to \(city) ? Check your phone now for more information!"
+            lowerThirdTextView.text = "Hello \(firstName), don't carry your drinks to \(city), you can have them delived instead! Check your phone now for more information."
             displayLowerThird()
             alreadyDisplaying = true
         } else {
