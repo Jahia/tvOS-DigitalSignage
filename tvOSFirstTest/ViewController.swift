@@ -83,11 +83,14 @@ class ViewController: UIViewController {
                 return
             }
             let properties = jsonResult["properties"] as! [String:AnyObject]
-            let firstName = properties["firstName"] as! String
-            let city = properties["city"] as! String
+            if let firstName = properties["firstName"] as? String,
+               let city = properties["city"] as? String {
             lowerThirdTextView.text = "Hello \(firstName), don't carry your drinks to \(city), you can have them delived instead! Check your phone now for more information."
             displayLowerThird()
             alreadyDisplaying = true
+            } else {
+                print("First name or City property -not found")
+            }
         } else {
             hideLowerThird()
             alreadyDisplaying = false
